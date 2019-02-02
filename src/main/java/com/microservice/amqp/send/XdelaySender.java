@@ -3,12 +3,11 @@ package com.microservice.amqp.send;
 import com.microservice.amqp.config.XdelayConfig;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
+import org.springframework.stereotype.Component;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@Service
+@Component
 public class XdelaySender {
 
     @Autowired
